@@ -1674,6 +1674,32 @@
 
             width: 100%;
         }
+        .venue-photo-card {
+            position: relative;
+            width: min(300px, 84vw);
+            margin: 20px auto 25px;
+            padding: 5px;
+            background: linear-gradient(135deg, rgba(198, 161, 91, 0.7), rgba(243, 231, 199, 0.4), rgba(138, 104, 47, 0.6));
+            border-radius: 130px 130px 20px 20px;
+            box-shadow: 0 16px 36px rgba(35, 45, 55, 0.16);
+            display: block;
+            z-index: 5;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .venue-photo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 42px rgba(35, 45, 55, 0.22);
+        }
+
+        .venue-photo-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: 125px 125px 16px 16px;
+            display: block;
+        }
 
         .home-img {
             position: relative;
@@ -3208,7 +3234,7 @@
                 reveal
                 delay-500
             ">
-                        Friday &middot; 7:00 PM
+                        Friday &middot; 5:30 PM
                     </div>
 
                 </div>
@@ -3393,7 +3419,7 @@
             ">
 
                         <div class="event-time">
-                            06:30 PM
+                            05:30 PM
                         </div>
 
                         <div class="event-name">
@@ -3413,15 +3439,15 @@
             ">
 
                         <div class="event-time">
-                            07:00 PM
+                            07:30 PM
                         </div>
 
                         <div class="event-name">
-                            Nikah Ceremony
+                            Nikkah
                         </div>
 
                         <div class="event-description">
-                            The beautiful beginning of forever
+                            The sacred union & ceremony
                         </div>
 
                     </div>
@@ -3433,7 +3459,7 @@
             ">
 
                         <div class="event-time">
-                            08:00 PM
+                            09:30 PM
                         </div>
 
                         <div class="event-name">
@@ -3453,7 +3479,7 @@
             ">
 
                         <div class="event-time">
-                            09:00 PM
+                            11:00 PM
                         </div>
 
                         <div class="event-name">
@@ -3461,7 +3487,7 @@
                         </div>
 
                         <div class="event-description">
-                            Let's celebrate this beautiful union
+                            Celebration from 11:00 PM onwards
                         </div>
 
                     </div>
@@ -3517,7 +3543,9 @@
             delay-200
         ">
 
-                    <img src="content/home.png" alt="Wedding venue" class="home-img">
+                    <div class="venue-photo-card">
+                        <img src="content/venue.jpg" alt="Sunset Luxury Farmhouse" class="venue-photo-img">
+                    </div>
 
                 </div>
 
@@ -3528,17 +3556,31 @@
             reveal
             delay-300
         ">
-                    The Grand Celebration
+                    Sunset Luxury Farmhouse
                 </div>
 
                 <div class="
-            text-[10px]
-            text-[#718b99]
+            text-[11px]
+            text-[#5a7686]
+            font-medium
             mt-3
+            tracking-[.18em]
+            uppercase
             reveal
             delay-400
         ">
-                    Karachi &middot; Pakistan
+                    Malir Cantonment &middot; Karachi, Pakistan
+                </div>
+
+                <div class="
+            text-[9px]
+            text-[#7e96a4]
+            mt-1.5
+            tracking-[.12em]
+            reveal
+            delay-400
+        ">
+                    W6HR+FF9, Malir Cantt, Karachi
                 </div>
 
                 <a href="https://maps.app.goo.gl/Tnf7FXQ9ZQEz5h2d9" target="_blank" rel="noopener noreferrer"
@@ -3609,14 +3651,18 @@
                 </div>
 
                 <div class="attire-main">
-                    Elegant Formal
+                    Formal Attire
+                </div>
+
+                <div class="text-[12px] uppercase tracking-[.3em] text-[#b89569] font-medium mt-1">
+                    Desi Look
                 </div>
 
                 <div class="attire-desc">
 
-                    We invite you to dress in your finest
-                    formal attire and celebrate the evening
-                    with us in style.
+                    Formal attire with an elegant Desi look.
+                    We warmly invite our guests to celebrate with
+                    us in traditional festive attire.
 
                 </div>
 
@@ -3631,25 +3677,27 @@
                 w-7
                 h-7
                 rounded-full
-                bg-[#183b5b]
+                bg-[#8A682F]
+                border
+                border-[#b99b61]
             "></div>
 
                     <div class="
                 w-7
                 h-7
                 rounded-full
-                bg-[#dcecf5]
+                bg-[#C6A15B]
                 border
-                border-[#b5cbd6]
+                border-[#E4D19E]
             "></div>
 
                     <div class="
                 w-7
                 h-7
                 rounded-full
-                bg-[#f7f6ef]
+                bg-[#FFFDF7]
                 border
-                border-[#c7c7bd]
+                border-[#d5c39c]
             "></div>
 
                 </div>
@@ -3661,7 +3709,7 @@
             text-[#8297a3]
             mt-4
         ">
-                    Blue � White � Neutrals
+                    Traditional &middot; Gold &middot; Festive
                 </div>
 
             </div>
@@ -4208,7 +4256,7 @@ scrollDownButton.addEventListener("click", () => {
 
         const weddingDate =
             new Date(
-                "December 25, 2026 19:00:00"
+                "December 25, 2026 17:30:00"
             ).getTime();
 
 
